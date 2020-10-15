@@ -1,8 +1,6 @@
 package com.example.downloadnotification;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationManagerCompat;
-
 import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Context;
@@ -16,14 +14,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private NotificationManagerCompat notificationManager;
     private EditText editTextUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        notificationManager = NotificationManagerCompat.from(this);
 
         editTextUrl = findViewById(R.id.edi_text_url);
     }
